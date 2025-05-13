@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acleda</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SEO Meta Tags -->
+    <title>Acleda Bank</title>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="ACLEDA Bank supports Cambodian Arts under the art title Nikakhit drawn by artist Koem Keo Socheat."
+    />
+    <meta name="author" content="Acleda Team" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Acleda - Find Your Dream Bank Easily" />
+    <meta
+      property="og:description"
+      content="Acleda Bank, the leading bank portal where you can discover top career opportunities and land your dream bank effortlessly."
+    />
+    <meta
+      property="og:image"
+      content="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/job-thumbs%20up.jpg"
+    />
+    <meta property="og:url" content="https://job-seek-seven.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Acleda - Find Your Dream bank Easily" />
+    <meta
+      name="twitter:description"
+      content="Find top bank opportunities and apply easily with Acleda. Your career starts here!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.acledabank.com.kh/kh/assets/layout/logo-white.png"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+
+    <style>
+      /* Custom style for mobile menu */
+      .mobile-menu-hidden {
+        display: none;
+      }
+      
+      /* Mobile sidebar menu styles */
+      .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1a2c52;
+        z-index: 50;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .mobile-sidebar.active {
+        transform: translateX(0);
+      }
+      
+      /* Mobile menu item styles */
+      .mobile-menu-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+      }
+      
+      .mobile-menu-item i {
+        margin-right: 1rem;
+        width: 20px;
+      }
+      
+      /* Close button styles */
+      .close-button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bg-background">
+    <header class="bg-[#1a2c52] text-white">
+      <div
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4">
+                      <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="h-10"
+            />
+          </a>
+          <a href="#" class=" lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <a href="#" class="flex items-center text-sm hover:text-yellow-300">
+            <i class="fas fa-gift mr-1"></i> SPECIAL OFFERS
+          </a>
+          <div class="relative group">
+            <a href="#" class="flex items-center text-sm hover:text-yellow-300">
+              ABOUT ACLEDA <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+          </div>
+          <a href="#" class="flex items-center text-sm hover:text-yellow-300">
+            <i class="fas fa-search"></i> SEARCH
+          </a>
+          <div class="relative group">
+            <a
+              href="#"
+              class="flex items-center text-sm text-yellow-400 hover:text-yellow-300"
+            >
+              INTERNET BANKING <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+          </div>
+          <a href="#" class="ml-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Sidebar Navigation -->
+    <div id="mobile-sidebar" class="mobile-sidebar">
+      <div class="p-4 flex justify-between items-center border-b border-gray-700">
+        <div class="flex items-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+            alt="Cambodian Flag"
+            class="h-4 rounded mr-2"
+          />
+          <span>ភាសាខ្មែរ</span>
+        </div>
+        <button id="close-sidebar" class="close-button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="py-4">
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-globe"></i>
+          <span>ACLEDA INTERNET BANKING</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-money-bill-wave"></i>
+          <span>ACLEDA TOANCHET PAY</span>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-search"></i>
+          <span>SEARCH</span>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-gift"></i>
+          <span>SPECIAL OFFERS</span>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-university"></i>
+          <span>ABOUT ACLEDA</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+      </div>
+      
+      <div class="border-t border-gray-700 py-4">
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-user"></i>
+          <span>PERSONAL</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-briefcase"></i>
+          <span>BUSINESS</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-credit-card"></i>
+          <span>CARDS</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+        <a href="#" class="mobile-menu-item">
+          <i class="fas fa-fingerprint"></i>
+          <span>DIGITAL</span>
+          <i class="fas fa-chevron-down ml-auto text-xs"></i>
+        </a>
+      </div>
+    </div>
+
+    <nav class="bg-[#141f35] text-white py-3">
+      <div
+        class="max-w-screen-xl mx-auto px-4 py-3 hidden flex-col md:flex-row justify-between items-center lg:flex"
+      >
+        <!-- Main Categories -->
+        <div
+          class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+        >
+          <a
+            href="#"
+            class="text-yellow-400 font-medium px-2 py-1 text-sm hover:text-yellow-300"
+          >
+            PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+          >
+            BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+          >
+            CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+          >
+            DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+          >
+            INVESTOR RELATIONS
+          </a>
+        </div>
+
+        <!-- Exchange Rates -->
+        <div class="flex items-center space-x-4 text-xs">
+          <span class="hidden md:inline">EXCHANGE</span>
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="JPY Flag"
+              class="h-4 w-4 mr-1"
+            />
+            <span>JPY</span>
+            <span class="text-green-400 ml-2"
+              >26.3505 <i class="fas fa-arrow-up text-xs"></i
+            ></span>
+          </div>
+          <div class="flex items-center">
+            <span class="text-green-400"
+              >27.3918 <i class="fas fa-arrow-up text-xs"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+      <div
+        class="w-full h-96 md:h-[400px] lg:h-[500px] overflow-hidden bg-gray-200"
+      >
+        <div class="flex justify-center items-center h-full">
+          <div
+            class="max-w-screen-xl w-full flex justify-between items-center px-4"
+          >
+            <!-- Left hand with USD -->
+            <div class="w-1/2 flex justify-end pr-4">
+              <img
+                src="https://picsum.photos/200/300"
+                alt="USD Currency"
+                class="max-h-64 object-contain"
+              />
+            </div>
+
+            <!-- Right hand with local currency -->
+            <div class="w-1/2 flex justify-start pl-4">
+              <img
+                src="https://picsum.photos/200/300"
+                alt="KHR Currency"
+                class="max-h-64 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cash Management / Foreign Exchange Section -->
+    <section class="bg-[#0a1627] text-white">
+      <!-- Cash Management Header -->
+      <div class="max-w-screen-xl mx-auto px-4 py-6 border-b border-gray-700">
+        <div class="flex items-center">
+          <h2 class="text-xl font-bold uppercase">CASH MANAGEMENT</h2>
+          <i class="fas fa-chevron-down ml-2"></i>
+        </div>
+      </div>
+
+      <!-- Breadcrumb Navigation -->
+      <div class="max-w-screen-xl mx-auto px-4 py-4">
+        <div class="flex items-center text-sm space-x-2">
+          <a href="#" class="text-yellow-400">
+            <i class="fas fa-dove transform rotate-45"></i>
+          </a>
+          <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+          <a href="#" class="text-gray-300 hover:text-white"
+            >Products & Services</a
+          >
+          <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+          <a href="#" class="text-gray-300 hover:text-white">Personal</a>
+          <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+          <a href="#" class="text-gray-300 hover:text-white">Cash Management</a>
+          <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+          <span class="text-gray-400">Foreign Exchange</span>
+        </div>
+      </div>
+
+      <!-- Foreign Exchange Content -->
+      <div class="max-w-screen-xl mx-auto px-4 py-6">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Left Content Section -->
+          <div class="w-full lg:w-2/3 pr-0 lg:pr-8">
+            <!-- Section Title -->
+            <div class="mb-4">
+              <h1 class="text-3xl font-bold">
+                <span class="text-white">FOREIGN</span>
+                <span class="text-yellow-400">EXCHANGE</span>
+              </h1>
+            </div>
+
+            <!-- Ratings -->
+            <div class="flex items-center mb-6">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star text-gray-600"></i>
+              </div>
+              <span class="ml-2 text-gray-300">(52 Ratings)</span>
+            </div>
+
+            <!-- Description Text -->
+            <p class="text-base text-gray-300 leading-relaxed">
+              We provide foreign exchange service to our customers through all
+              offices within Cambodia in 12 currencies: Khmer Riel (KHR), US
+              Dollar (USD), Thai Baht (THB), Chinese Yuan (CNY), Euro (EUR)*,
+              Australian Dollar (AUD)*, Vietnamese Dong (VND)*, Canadian Dollar
+              (CAD)*, Japanese Yen (JPY)*, UK Pound (GBP)*, Lao Kip (LAK)*,
+              Singapore Dollar (SGD)*.
+            </p>
+          </div>
+
+          <!-- Right Image Section -->
+          <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+            <div class="bg-[#172045] rounded-lg p-6 relative">
+              <!-- Logo and Seal -->
+              <div class="flex justify-between mb-8">
+                <div class="flex items-center">
+                  <div class="text-xl font-bold mr-1 text-white">អេស៊ីលីដា</div>
+                  <div class="text-yellow-400 text-2xl">
+                    <i class="fas fa-dove transform rotate-45"></i>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="https://www.acledabank.com.kh/kh/assets/images/coc_logo.jpg"
+                    alt="Official Seal"
+                    class="h-12 w-12 rounded-full"
+                  />
+                </div>
+              </div>
+
+              <!-- Khmer Text -->
+              <div class="text-center mb-8">
+                <p class="text-sm mb-2">ចុះឈ្មោះកម្មវិធីទូរស័ព្ទចល័ត</p>
+                <p class="text-sm mb-2">មែនទានាឥតគិតថ្លៃតាមរយៈការដាក់កូដ</p>
+                <p class="text-sm">នឹង ការផ្ដល់សេវាកម្ម ស្ដង់ដារកំពូល</p>
+              </div>
+
+              <!-- Button -->
+              <div class="text-center mb-4">
+                <button
+                  class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded-full text-sm"
+                >
+                  ចុះឈ្មោះឥឡូវនេះ
+                </button>
+              </div>
+
+              <!-- Service Agent Image (Bottom Right) -->
+              <div class="absolute bottom-0 right-0">
+                <img
+                  src="https://www.acledabank.com.kh/kh/assets/images/mobile-app.png"
+                  alt="Customer Service Agent"
+                  class="h-32"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="max-w-screen-xl mx-auto">
+      <section></section>
+      <div>
+        <section></section>
+        <section></section>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Mobile menu toggle functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileSidebar = document.getElementById("mobile-sidebar");
+        const closeSidebarButton = document.getElementById("close-sidebar");
+
+        if (mobileMenuButton && mobileSidebar) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileSidebar.classList.add("active");
+          });
+        }
+
+        if (closeSidebarButton && mobileSidebar) {
+          closeSidebarButton.addEventListener("click", function () {
+            mobileSidebar.classList.remove("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
