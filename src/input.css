@@ -3,5 +3,18 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @theme {
+  /* Font */
     --font-sans: InterVariable, sans-serif;
+
+  /* Color */
+    --color-primary: #122133;
+    --color-secondary: #1C3351;
+    --color-background: #0A1521;
+    --color-accent: #CEA939;
+
+  /* Text color */
+    --color-textWhite: #FFFFFF;
+    --color-textGray: #858686;
+    --color-textSkyLight: #A9CBF0;
+    --color-textGold: #CA9812;
   }
