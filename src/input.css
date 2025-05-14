@@ -2,6 +2,7 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@import "tailwindcss";
 @theme {
   /* Font */
     --font-sans: InterVariable, sans-serif;
