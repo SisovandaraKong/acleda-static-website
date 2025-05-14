@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- SEO -->
+         <title>Inventor Relation</title>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="ACLEDA Bank supports Cambodian Arts under the art title Nikakhit drawn by artist Koem Keo Socheat."
+    />
+    <meta name="author" content="Acleda Team" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Acleda - Find Your Dream Bank Easily" />
+    <meta
+      property="og:description"
+      content="Acleda Bank, the leading bank portal where you can discover top career opportunities and land your dream bank effortlessly."
+    />
+    <meta
+      property="og:image"
+      content="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/job-thumbs%20up.jpg"
+    />
+    <meta property="og:url" content="https://job-seek-seven.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Acleda - Find Your Dream bank Easily" />
+    <meta
+      name="twitter:description"
+      content="Find top bank opportunities and apply easily with Acleda. Your career starts here!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.acledabank.com.kh/kh/assets/layout/logo-white.png"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../input.css" />
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body class="bg-background">
+    <!-- Header Section -->
+    <header class="bg-secondary text-white shadow-2xl sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div
+          class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4"
+        >
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="lg:h-16 h-10"
+            />
+          </a>
+          <a href="#" class="lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center justify-end w-full">
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SPECIAL OFFERS
+            <i class="fa-solid fa-envelope-open ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              ABOUT ACLEDA
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SEARCH
+            <i class="fa-solid fa-magnifying-glass ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              INTERNET BANKING
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-sidebar"
+        class="fixed top-0 left-0 w-full h-full bg-[#1a2c52] z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded mr-2"
+            />
+            <span>ភាសាខ្មែរ</span>
+          </div>
+          <button
+            id="close-sidebar"
+            class="bg-transparent border-none text-white text-xl cursor-pointer"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-globe w-5 mr-4"></i>
+            <span>ACLEDA INTERNET BANKING</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-money-bill-wave w-5 mr-4"></i>
+            <span>ACLEDA TOANCHET PAY</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-search w-5 mr-4"></i>
+            <span>SEARCH</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-gift w-5 mr-4"></i>
+            <span>SPECIAL OFFERS</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-university w-5 mr-4"></i>
+            <span>ABOUT ACLEDA</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-user w-5 mr-4"></i>
+            <span>PERSONAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-briefcase w-5 mr-4"></i>
+            <span>BUSINESS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-credit-card w-5 mr-4"></i>
+            <span>CARDS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-fingerprint w-5 mr-4"></i>
+            <span>DIGITAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="bg-primary text-white py-3 sticky top-50 z-40">
+        <div
+          class="max-w-screen-xl mx-auto px-4 py-1 hidden flex-col md:flex-row justify-between items-center lg:flex"
+        >
+          <!-- Main Categories -->
+          <div
+            class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+          >
+            <a
+              href="#"
+              class="text-yellow-400 font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              INVESTOR RELATIONS
+            </a>
+          </div>
+
+          <!-- Exchange Rates -->
+          <div class="flex items-center space-x-4 text-xs">
+            <span class="hidden md:inline">EXCHANGE</span>
+            <div class="flex items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                alt="JPY Flag"
+                class="h-4 mr-1"
+              />
+              <span>JPY</span>
+              <span class="text-green-400 ml-2"
+                >26.3505 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-green-400"
+                >27.3918 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="bg-secondary relative">
+      <div
+        id="controls-carousel"
+        class="max-w-screen-xl bg-secondary mx-auto"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative max-w-screen-xl overflow-hidden xl:h-[55vh] lg:h-[50vh] md:h-[25vh] sm:h-[20vh] h-[20vh]"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/image/banner-investor-relation2.jpg"
+              class="absolute block w-full top-0 left-0 right-0"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/image/banner-investor-relation4.jpg"
+              class="absolute block w-full top-0 left-0 right-0"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/image/banner-investor-relation.jpg"
+              class="absolute block w-full top-0 left-0 right-0"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full text-white group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div
+      class="container max-w-screen-xl font-sans mx-auto px-4 py-8 text-white"
+    >
+      <!-- Main content -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Left Column -->
+        <div class="md:col-span-2 ">
+          <div class="flex items-center mb-4 gap-2 font-sans text-sm">
+            <p>INVESTOR RELATIONS</p>
+            <i class="fas fa-chevron-down ml-2"></i>
+          </div>
+          <hr class="my-4 border-gray-700" />
+          <div class="flex items-center mb-4 gap-2 pt-4">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo1.png"
+              alt=""
+              height="24"
+              width="24"
+            />
+            <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+            <p class="text-sm">Investor Relations</p>
+          </div>
+          <!-- Investor Relations -->
+          <div class="mb-8 pt-4">
+            <div class="flex items-center mb-4">
+              <h2 class="text-2xl font-semibold">
+                INVESTOR <span class="text-accent">RELATIONS</span>
+              </h2>
+            </div>
+            <p class="text-sm font-semibold pb-4">Symbol: ABC(ធអក)</p>
+          </div>
+
+          <!-- Public Relation Officers & Disclosure Officer -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- Public Relation Officers -->
+            <div class="flex flex-col gap-4">
+              <hr class="my-4 border-gray-700" />
+              <h3 class="text-xl font-semibold mb-4 text-accent">
+                PUBLIC RELATION OFFICERS
+              </h3>
+              <div class="flex flex-col">
+                <img
+                  src="https://www.acledabank.com.kh/kh/assets/image/portrait_mgt_mamara.jpg"
+                  alt="Officer Photo"
+                  class="mb-2"
+                  height="300"
+                  width="300"
+                />
+                <p class="text-md font-bold mb-2">Mrs. Mar Amara</p>
+                <p class="text-sm mb-2 font-semibold">
+                  Senior Group Chief Financial Officer
+                </p>
+                <p class="text-sm mb-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="text-textSkyLight px-2 font-semibold"
+                    >(855) 15 900 126</span
+                  >
+                </p>
+                <p class="text-sm">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="text-textSkyLight px-2 font-semibold">
+                    <a href="mailto:kate.smith@abcplatform.com.kh"
+                      >amara@acledabank.com.kh</a
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Disclosure Officer -->
+            <div class="flex flex-col gap-4">
+              <hr class="my-4 border-gray-700" />
+              <h3 class="text-xl font-semibold mb-4 text-accent">
+                DISCLOSURE OFFICER
+              </h3>
+              <div class="flex flex-col">
+                <img
+                  src="https://www.acledabank.com.kh/kh/assets/image/portrait_bsayha.jpg"
+                  alt="Officer Photo"
+                  class="mb-2"
+                  height="300"
+                  width="300"
+                />
+                <p class="text-md font-bold mb-2">Mrs. Buth Bunseyha</p>
+                <p class="text-sm mb-2 font-semibold">
+                  Senior Group Chief Legal Officer and Corporate Secretary
+                </p>
+                <p class="text-sm mb-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="text-textSkyLight px-2 font-semibold"
+                    >(855) 15 600 532</span
+                  >
+                </p>
+                <p class="text-sm">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="text-textSkyLight px-2 font-semibold">
+                    <a href="mailto:kate.smith@abcplatform.com.kh"
+                      >buth.bunsayha@acledabank.com.kh</a
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Today Price -->
+          <div
+            class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col gap-2 mb-8"
+          >
+            <div class="mb-8 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full w-full">
+                <hr class="my-4 border-gray-700" />
+              <h3 class="text-lg font-semibold mb-4 text-accent">
+                TODAY PRICE
+              </h3>
+              <p class="pb-2">13 May 2025 06:00:21</p>
+              <p class="pb-2">PE: 5.37</p>
+              <div class="p-4 bg-primary rounded">
+                <div class="grid grid-cols-2 gap-4 text-md">
+                  <div>Previous Day Price</div>
+                  <div class="text-right">6,900</div>
+
+                  <div>Current Price</div>
+                  <div class="text-right">6,900</div>
+
+                  <div>Change</div>
+                  <div class="text-right text-sky-900">0 (0%)</div>
+
+                  <div>Opening</div>
+                  <div class="text-right">0</div>
+
+                  <div>High</div>
+                  <div class="text-right">6,900</div>
+
+                  <div>Low</div>
+                  <div class="text-right">6,900</div>
+
+                  <div>Trading Volume(shr)</div>
+                  <div class="text-right">0</div>
+
+                  <div>Trading Value(KHR)</div>
+                  <div class="text-right">0</div>
+
+                  <div>Market Cap. (Mil.KHR)</div>
+                  <div class="text-right">2,988,824.83</div>
+                </div>
+              </div>
+              <div class="mt-4 text-textSkyLight flex justify-center">
+                <a href="#" class= text-sm">Show details</a>
+              </div>
+            </div>
+
+            <!-- Feedback Form -->
+            <div class="mb-8 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full w-full">
+                <hr class="my-4 border-gray-700 px-4" />
+              <h3 class="text-lg font-semibold mb-4 text-accent px-4">
+                FEEDBACK FORM
+              </h3>
+              <p class="text-sm mb-4 p-4">
+                Please do not hesitate to contact us if you have any questions
+                about our company, products or services on investing. We'll get
+                back to you as soon as possible.
+              </p>
+
+              <form class="bg-[#0f1923] p-4 rounded">
+                <div class="mb-4">
+                  <input
+                    type="Phone"
+                    placeholder="Name"
+                    class="w-full p-2 bg-primary border border-gray-700 rounded text-white"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="Phone"
+                    placeholder="Email"
+                    class="w-full p-2 bg-primary border border-gray-700 rounded text-white"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="Phone"
+                    placeholder="Subject"
+                    class="w-full p-2 bg-primary border border-gray-700 rounded text-white"
+                  />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                  type="Phone" 
+                    placeholder="Enjuiry"
+                    rows="3"
+                    class="w-full p-2 bg-primary border border-gray-700 rounded text-white"
+                  ></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="mr-2">Attach</span>
+                    <i class="fa-solid fa-question bg-accent text-primary px-2 py-1 rounded-full"></i>
+                  </div>
+                </div>
+                <div>
+                    <input
+                        type="file"
+                        class="w-full p-2 bg-primary border border-gray-700 rounded text-white mt-2"
+                    />
+                </div>
+                <div class="mt-4 text-sm py-4">
+                  <p>
+                    By clicking "Send" button, you agree to our Privacy Notice and consent to the bank using your personal data for the requested service.
+                  </p>
+                </div>
+                <hr class="my-4 border-gray-700 px-4" />
+                <button type="submit" class="bg-accent text-primary px-4 py-2 rounded">
+                    Send
+                </button>  
+              </form>
+        <div class="mb-8 pt-8 py-0">
+                <hr class="my-4 border-gray-700 px-4" />
+            <h3 class="text-lg font-semibold mb-4 text-accent pt-8">
+              FREQUENTLY ASKED QUESTIONS
+            </h3>
+            <div class="">
+              <img src="https://www.acledabank.com.kh/kh/assets/image/img-qna-small.jpg" alt="FAQ" class="w-full" />
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <!-- Corporate Disclosure -->
+          <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col gap-2 mb-8">
+            <div class="mb-8 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full w-full">
+            <hr class="my-4 border-gray-700 px-4" />
+            <h3 class="text-lg font-semibold mb-4 text-accent">CORPORATE DISCLOSURE</h3>
+            <div class=" flex flex-col gap-1 rounded">
+              <div class="bg-primary p-4">
+                <p class="text-sm mb-4 text-textSkyLight">
+                First Quarterly Report 2025 of ACLEDA Bank Plc's Group
+              </p>
+              <p class="text-xs">May 09, 2025</p>
+              </div>
+              <div class="bg-primary p-4">
+                <p class="text-sm mb-4 text-textSkyLight">
+               Increase in Profit / Loss
+              </p>
+              <p class="text-xs">May 08, 2025</p>
+              </div>
+              <div class="bg-primary p-4">
+                <p class="text-sm mb-4 text-textSkyLight">
+               Notification on Record Date for the 2024 Dividend Distribution of ACLEDA BANK PLC.
+              </p>
+              <p class="text-xs">Apr 24, 2025</p>
+              </div>
+            </div>
+            <div class="mt-4 text-textSkyLight flex justify-center">
+                <a href="#" class= text-sm">Show More</a>
+              </div>
+          </div>
+          </div>
+
+          <!-- Consolidated Bond Information -->
+          <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col gap-2 mb-8">
+            <div class="mb-8 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full w-full">
+                 <hr class="my-4 border-gray-700" />
+            <h3 class="text-lg font-semibold mb-4 text-accent">
+              CONSOLIDATED BOND INFORMATION
+            </h3>
+            <div class="">
+              <img
+                src="https://www.acledabank.com.kh/kh/assets/image/img-ln20250224-small.jpg"
+                alt="Bond Information"
+                class="w-full mb-4"
+              />
+              <p class="text-sm font-semibold leading-6">
+                ACLEDA BANK has obtained an approval from the National Bank of Cambodia ("NBC"), and Securities Regulator of Cambodia ("SERC") for Subordinated Bond Issuance...
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <!-- Government Bond Investment -->
+          <div class="flex xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col gap-2 mb-8">
+            <div class="mb-8 xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full w-full">
+                <hr class="my-4 border-gray-700" />
+            <h3 class="text-lg font-semibold mb-4 text-accent">
+              GOVERNMENT BOND INVESTMENT
+            </h3>
+            <div class="">
+              <img
+                src="https://www.acledabank.com.kh/kh/assets/image/img-ln20250228-small.jpg"
+                alt="Government Bond"
+                class="w-full mb-4"
+              />
+              <p class="text-sm font-semibold leading-6">
+                ACLEDA BANK absolutely appreciates the authorization as a Government Bond Intermediary in securities sector from the SERC in order to serve the investors in both local and overseas...
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <!-- Securities Certificate -->
+          <div class="mb-8 bg-primary px-4 py-6">
+            <h3 class="text-lg font-semibold mb-4">
+              SECURE THE LISTING CERTIFICATE
+            </h3>
+            <hr class="my-4 border-gray-700 px-4" />
+            <div class="p-2 bg-white rounded">
+              <img
+                src="https://www.acledabank.com.kh/kh/assets/image/img-listing-certificate.jpg"
+                alt="Certificate"
+                class="w-full"
+              />
+            </div>
+          </div>
+
+          <!-- CSX Trophy -->
+          <div class="mb-8 bg-primary px-4 py-6">
+            <h3 class="text-lg font-semibold mb-4">
+              CSX COMMERCIAL BANK ON THE CAMBODIAN SECURITIES EXCHANGE
+            </h3>
+            <hr class="my-4 border-gray-700 px-4" />
+            <div class="p-2 rounded">
+              <img src="https://www.acledabank.com.kh/kh/assets/image/img-stock-tombstone.jpg" alt="Trophy" class="w-full" />
+            </div>
+          </div>
+
+          <!-- Best Corporate -->
+          <div class="mb-8 bg-primary px-4 py-6">
+            <h3 class="text-lg font-semibold mb-4">
+              THE BEST CORPORATE SPECIALIZED MARKET CSX
+            </h3>
+            <hr class="my-4 border-gray-700 px-4" />
+            <div class="grid grid-cols-2 gap-4">
+              <div class=" p-2 rounded">
+                <img
+                  src="https://www.acledabank.com.kh/kh/assets/picture-library/260s.jpg"
+                  alt="Award 1"
+                  class="w-full"
+                />
+              </div>
+              <div class=" p-2 rounded">
+                <img
+                  src="https://www.acledabank.com.kh/kh/assets/picture-library/261s.jpg"
+                  alt="Award 2"
+                  class="w-full"
+                />
+              </div>
+            </div>
+            <p class="text-sm mt-4 leading-6">
+              ACLEDA Bank has won the Best Corporate Disclosure Award 2024 after a comprehensive evaluation by Securities and Exchange Regulator of Cambodia and Cambodia Securities Exchange in the Cambodia Stock Market Exhibition "My First Stock" 2024.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Mobile menu toggle functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileSidebar = document.getElementById("mobile-sidebar");
+        const closeSidebarButton = document.getElementById("close-sidebar");
+
+        if (mobileMenuButton && mobileSidebar) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileSidebar.classList.add("active");
+            mobileSidebar.classList.remove("-translate-x-full");
+          });
+        }
+
+        if (closeSidebarButton && mobileSidebar) {
+          closeSidebarButton.addEventListener("click", function () {
+            mobileSidebar.classList.remove("active");
+            mobileSidebar.classList.add("-translate-x-full");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
