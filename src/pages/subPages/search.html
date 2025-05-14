@@ -8,6 +8,243 @@
     <title>Search</title>
   </head>
   <body>
+     <header class="bg-secondary text-white shadow-2xl sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div
+          class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4"
+        >
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="lg:h-16 h-10"
+            />
+          </a>
+          <a href="#" class="lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center justify-end w-full">
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SPECIAL OFFERS
+            <i class="fa-solid fa-envelope-open ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              ABOUT ACLEDA
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SEARCH
+            <i class="fa-solid fa-magnifying-glass ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              INTERNET BANKING
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-sidebar"
+        class="fixed top-0 left-0 w-full h-full bg-[#1a2c52] z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded mr-2"
+            />
+            <span>ភាសាខ្មែរ</span>
+          </div>
+          <button
+            id="close-sidebar"
+            class="bg-transparent border-none text-white text-xl cursor-pointer"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-globe w-5 mr-4"></i>
+            <span>ACLEDA INTERNET BANKING</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-money-bill-wave w-5 mr-4"></i>
+            <span>ACLEDA TOANCHET PAY</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-search w-5 mr-4"></i>
+            <span>SEARCH</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-gift w-5 mr-4"></i>
+            <span>SPECIAL OFFERS</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-university w-5 mr-4"></i>
+            <span>ABOUT ACLEDA</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-user w-5 mr-4"></i>
+            <span>PERSONAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-briefcase w-5 mr-4"></i>
+            <span>BUSINESS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-credit-card w-5 mr-4"></i>
+            <span>CARDS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-fingerprint w-5 mr-4"></i>
+            <span>DIGITAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="bg-primary text-white py-3 sticky top-50 z-40">
+        <div
+          class="max-w-screen-xl mx-auto px-4 py-1 hidden flex-col md:flex-row justify-between items-center lg:flex"
+        >
+          <!-- Main Categories -->
+          <div
+            class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+          >
+            <a
+              href="#"
+              class="text-yellow-400 font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              INVESTOR RELATIONS
+            </a>
+          </div>
+
+          <!-- Exchange Rates -->
+          <div class="flex items-center space-x-4 text-xs">
+            <span class="hidden md:inline">EXCHANGE</span>
+            <div class="flex items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                alt="JPY Flag"
+                class="h-4 mr-1"
+              />
+              <span>JPY</span>
+              <span class="text-green-400 ml-2"
+                >26.3505 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-green-400"
+                >27.3918 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="bg-[#0a1a2f] text-white font-sans">
       <div class="flex items-center justify-between px-6 py-4 border-gray-700">
         <div class="text-xl font-bold">
