@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InternetBanking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM37KLHTgu31C4LMRGMBzIu7QwwJXVeOC-EA&s"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../output.css" />
+
+    <!-- SEO Meta Tags -->
+    <title>Acleda Bank</title>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="ACLEDA Bank supports Cambodian Arts under the art title Nikakhit drawn by artist Koem Keo Socheat."
+    />
+    <meta name="author" content="Acleda Team" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Acleda - Find Your Dream Bank Easily" />
+    <meta
+      property="og:description"
+      content="Acleda Bank, the leading bank portal where you can discover top career opportunities and land your dream bank effortlessly."
+    />
+    <meta
+      property="og:image"
+      content="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/job-thumbs%20up.jpg"
+    />
+    <meta property="og:url" content="https://job-seek-seven.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Acleda - Find Your Dream bank Easily" />
+    <meta
+      name="twitter:description"
+      content="Find top bank opportunities and apply easily with Acleda. Your career starts here!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.acledabank.com.kh/kh/assets/layout/logo-white.png"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+  </head>
+  <body class="bg-background">
+    <header class="bg-[#122A45] text-white shadow-2xl sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div
+          class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4"
+        >
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="lg:h-16 h-10"
+            />
+          </a>
+          <a href="#" class="lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center justify-end w-full">
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-Gold whitespace-nowrap px-4"
+          >
+            SPECIAL OFFERS
+            <i class="fa-solid fa-envelope-open ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-Gold whitespace-nowrap px-4"
+            >
+              ABOUT ACLEDA
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-Gold whitespace-nowrap px-4"
+          >
+            SEARCH
+            <i class="fa-solid fa-magnifying-glass ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-Gold whitespace-nowrap px-4"
+            >
+              INTERNET BANKING
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-sidebar"
+        class=" bg-[#122133] fixed top-0 left-0 w-full h-full z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class=" p-4 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded mr-2"
+            />
+            <span>ភាសាខ្មែរ</span>
+          </div>
+          <button
+            id="close-sidebar"
+            class="bg-transparent border-none text-white text-xl cursor-pointer"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-globe w-5 mr-4"></i>
+            <span>ACLEDA INTERNET BANKING</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-money-bill-wave w-5 mr-4"></i>
+            <span>ACLEDA TOANCHET PAY</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-search w-5 mr-4"></i>
+            <span>SEARCH</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-gift w-5 mr-4"></i>
+            <span>SPECIAL OFFERS</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-university w-5 mr-4"></i>
+            <span>ABOUT ACLEDA</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-user w-5 mr-4"></i>
+            <span>PERSONAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-briefcase w-5 mr-4"></i>
+            <span>BUSINESS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-credit-card w-5 mr-4"></i>
+            <span>CARDS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-fingerprint w-5 mr-4"></i>
+            <span>DIGITAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="bg-[#122133]  text-white py-3 sticky top-50 z-40">
+        <div
+          class="max-w-screen-xl mx-auto px-4 py-1 hidden flex-col md:flex-row justify-between items-center lg:flex"
+        >
+          <!-- Main Categories -->
+          <div
+            class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+          >
+            <a
+              href="#"
+              class="text-Gold font-medium px-2 py-1 text-sm hover:text-Gold"
+            >
+              PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-Gold"
+            >
+              BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-Gold"
+            >
+              CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-Gold"
+            >
+              DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-Gold"
+            >
+              INVESTOR RELATIONS
+            </a>
+          </div>
+
+          <!-- Exchange Rates -->
+          <div class="flex items-center space-x-4 text-xs">
+            <span class="hidden md:inline">EXCHANGE</span>
+            <div class="flex items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                alt="JPY Flag"
+                class="h-4 mr-1"
+              />
+              <span>JPY</span>
+              <span class="text-green-400 ml-2"
+                >26.3505 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-green-400"
+                >27.3918 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto">
+        <!-- Hero Section -->
+        <section class="w-full h-56 sm:h-72 md:h-[400px] lg:h-[450px] bg-gray-200" data-aos="fade-in">
+            <div class="bg-contain bg-center">
+                <img
+                    src="https://www.acledabank.com.kh/kh/assets/image/banner-internetbank.jpg"
+                    alt="Foreign Exchange"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+        </section>
+
+        <!-- Digital detials section -->
+        <section class="bg-gray-900 text-white">
+            <!-- Header text section  -->
+            <div class="max-w-screen-xl mx-auto px-4 py-6 border-b border-gray-700" data-aos="fade-up">
+                <div class="flex items-center">
+                    <h2 class="text-xl font-medium uppercase">DIGITAL</h2>
+                    <i class="fas fa-chevron-down ml-2"></i>
+                </div>
+            </div>
+
+            <!-- Breadcrumb Navigation -->
+            <div class="max-w-screen-xl mx-auto px-4 py-4 overflow-x-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center text-sm space-x-2 whitespace-nowrap">
+                    <a href="#" class="text-yellow-400">
+                        <i class="fas fa-dove transform rotate-45"></i>
+                    </a>
+                    <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                    <a href="#" class="text-gray-300 hover:text-white">Products & Services</a>
+                    <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                    <a href="#" class="text-gray-300 hover:text-white">Digital</a>
+                    <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                    <a href="#" class="text-gray-300 hover:text-white">ACLEDA Internet Banking</a>
+                    <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Describe about the Content -->
+            <div class="max-w-screen-xl mx-auto px-4 py-6">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Left Content Section -->
+                    <div class="w-full lg:w-2/3 pr-0 lg:pr-8" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Section Title -->
+                        <div class="mb-4">
+                            <h1 class="text-2xl md:text-3xl font-bold">
+                                <span class="text-white">ACLEDA</span>
+                                <span class="text-yellow-400">INTERNET BANKING </span>
+                            </h1>
+                        </div>
+
+                        <!-- Ratings -->
+                        <div  class="flex items-center mb-6">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-600"></i>
+                            </div>
+                            <span class="ml-2 text-gray-300">(78 Ratings)</span>
+                        </div>
+
+                        <!-- Description Text -->
+                        <div class="text-base text-gray-300 leading-relaxed mb-8">
+                            <div class="mb-6 relative">
+                                <p class=" w-[30rem] h-auto ">
+                                ACLEDA Internet Banking is the most advanced technology providing you to online access banking services (desktop or laptop computers that are connected to the Internet) anywhere anytime. It is fast, secure, reliable, and convenient to manage your money wherever you are.
+                                </p>
+                                <img class="w-[300px] h-[212px] absolute right-0 top-0" src="https://www.acledabank.com.kh/kh/assets/image/img-internetbank-2.jpg" alt="">
+                            </div>
+
+                            <!-- BENEFITS section  -->
+                            <div class="pl-5  flex flex-col gap-4 mb-6 ">
+                                <h2 class=" text-[#E9C45F] text-xl font-medium uppercase flex items-center ">
+                                    BENEFITS
+                                </h2>
+                                <ul class="list-disc text-[16px] text-gray-300 gap-1 flex flex-col ml-8 ">
+                                    <li>Save your expense and time by accessing banking services<br>anywhere anytime</li>
+                                    <li>Be convenient and secure for making funds transfer or payments</li>
+                                    <li>Minimize risk of bringing cash, counterfeit notes, etc.</li>
+                                    <li>Have an opportunity to use other services of ACLEDA Bank</li>
+                                </ul>
+                            </div>
+
+                            <!-- Currency section  -->
+                            <div class="mb-4 pl-5  flex flex-col gap-3">
+                                <h2 class=" text-[#E9C45F] text-xl font-medium uppercase flex items-center ">
+                                    CURRENCY
+                                </h2>
+                                <p class="text-[16px] text-gray-300 gap-1 flex flex-col">
+                                        The currency using in the ACLEDA Internet Banking is the same as the account currency. If you make payment in a currency different from your account, the system will automatically convert it bases on the exchange rate of ACLEDA Bank.here are three languages in the menu of ACLEDA Internet Banking; they are in Khmer, English and Chinese, but all customers' information or data that are inputted in the system such as names, dates, amounts, and other figures are in English.   
+                                </p>
+                            </div>
+
+                                <!-- LANGUAGE section  -->
+                            <div class="mb-4 pl-5  flex flex-col gap-3">
+                                <h2 class=" text-[#E9C45F] text-xl font-medium uppercase flex items-center ">
+                                    LANGUAGE
+                                </h2>
+                                <p class="text-[16px] text-gray-300 gap-1 flex flex-col">
+                                        There are three languages in the menu of ACLEDA Internet Banking; they are in Khmer, English and Chinese, but all customers' information or data that are inputted in the system such as names, dates, amounts, and other figures are in English.   
+                                </p>
+                            </div>
+
+                            <!-- Customers' Qualifications -->
+                            <div class="mb-4 pl-5  flex flex-col gap-3">
+                                <h2 class=" text-[#E9C45F] text-xl font-medium uppercase flex items-center ">
+                                    Customers' Qualifications
+                                </h2>
+                                <ul class="ml-6 flex text-[20px] gap-4">  
+                                    <li class="hover:text-amber-300 cursor-pointer font-bold "><a href="#helloo">CORPORATE</a></li>
+                                    <li class="hover:text-amber-300 cursor-pointer font-bold"><a href="#3456">INDIVUAL</a></li>
+                                 </ul> 
+
+                                 <div>
+                                    <h2 class=" ml-6 uppercase text-[21px]">ACLEDA Internet Banking for Corporate Account</h2>
+                                    <ul class=" list-disc text-[16px] text-gray-300 gap-1 flex flex-col ml-10 ">
+                                    <li>Corporate owner has to assign account's members as a maker/inputter and a checker/authorizer to register for using ACLEDA Internet Banking</li>
+                                    <li>Have an account with ACLEDA Bank (Current Account, Savings Account or Demand Deposit Account) and attach with documents below:
+                                        <ul class="list-inside" style="list-style-type: circle;">
+                                            <li>Identification of account's members who are maker/inputter and checker/authorizer</li>
+                                            <li>Identification of company's manager, shareholder, or partner</li>
+                                            <li>Memorandum and Articles of Association and Certificate of Registration</li>
+                                            <li>Business patent</li>
+                                            <li>Letter of authorization or resolution of company's board of directors or manager on account opening</li>                           
+                                            <li>Proxy letter or resolutions of board of directors or company director for account opening</li>
+                                        </ul>    
+                                    <li>A maker/inputter and a checker/authorizer should have personal computers (laptop or desktop computer) connected to the Internet</li>
+                                    <li>A maker/putter and a checker/authorizer should have personal mobile phone, telephone number and email address</li>
+                                </ul>
+                                 </div>
+                                 
+                                    
+                                
+                            </div>
+
+                            <!-- Banking Services Operating with ACLEDA Internet Banking -->
+                            <div class="mb-2 pl-5  flex flex-col gap-3">
+                                <h2 class=" text-[#E9C45F] text-xl font-medium uppercase flex items-center ">
+                                    Banking Services Operating with ACLEDA Internet Banking
+                                </h2>
+                                <ul class="ml-6 flex text-[20px] gap-4">  
+                                    <li class="hover:text-amber-300 cursor-pointer font-bold "><a href="#helloo">CORPORATE</a></li>
+                                    <li class="hover:text-amber-300 cursor-pointer font-bold"><a href="#3456">INDIVUAL</a></li>
+                                </ul> 
+                                <!-- Account Services -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Account Services</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Account summary</li>
+                                        <li>Account statement</li>
+                                        <li>Block/unblock account</li>
+                                        <li>Dormant account reactivation</li>
+                                    </ul>
+                                </div>
+                                <!-- Term Deposit -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Term Deposit</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Open term deposit</li>
+                                        <li>List of term deposit</li>                                 
+                                    </ul>
+                                </div>
+                                <!-- Bill Payment -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Bill Payment</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li><span class="text-blue-300  hover:underline cursor-pointer hover:text-white">Bill payment</span> (Agriculture, Bill 24, Electricity, Financial, Insurance, Internet Provider, Public Service, Real Estate, School, Solid Waste, Trading & Distribution, Water Supply, etc.)</li>
+                                        <li>Auto direct debit bill</li>    
+                                        <li>Batch bill payment</li>                             
+                                    </ul>
+                                </div>
+                                <!-- Cheque Services -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Cheque Services</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Cheque status inquiry</li>    
+                                        <li>Stop cheque</li>  
+                                        <li>Cheque book request</li>                           
+                                    </ul>
+                                </div>
+                                <!-- Bank confirmation -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Bank confirmation</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Bank confirmation request</li>                                                                
+                                    </ul>
+                                </div>
+                                <!-- Local Fund Transfer -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Local Fund Transfer</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Own account transfer</li>
+                                        <li>Transfer within bank</li>
+                                        <li>Transfer to non-account</li>
+                                        <li>InterBank Transfer</li>
+                                        <li>Transfer between other banks/Bakong wallet</li>
+                                        <li>Transfer between other banks via Fast Payment</li>
+                                        <li>Change information</li>
+                                        <li>Manage template</li>
+                                        <li>Cancel transfer request</li>                                                               
+                                    </ul>
+                                </div>
+                                 <!-- Overseas Funds Transfer -->
+                                 <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Overseas Funds Transfer</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Transfer between overseas banks</li>   
+                                        <li>Change information</li>
+                                        <li>Manage template</li>
+                                        <li>Cancel fund transfer</li>                                                            
+                                    </ul>
+                                </div>    
+                                <!-- Payment Services   -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Payment Services</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Payroll to account/mobile number    </li>   
+                                        <li>Package payment to bank account/wallet account</li>
+                                        <li>Supplier payment to bank account/wallet account/non-account</li>
+                                        <li>Cancel payment request</li>                                                            
+                                    </ul>
+                                </div>      
+                                <!-- Top Up   -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Top Up</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li><a class=" text-blue-400 hover:underline hover:text-white " href="#">Mobile top up</a>  </li>                                                              
+                                    </ul>
+                                </div>      
+                                <!-- Standing Order   -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Standing Order</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Standing order</li>
+                                        <li>Cancel standing order</li>
+                                    </ul>
+                                </div> 
+                                    <!-- Loan Service -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Loan Service</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Loan request</li>
+                                        <li>Loan summary</li>
+                                        <li>Early loan pay off request</li>
+                                        <li>Closed loan history</li>
+                                    </ul>
+                                </div>      
+                                <!-- Tax Payment -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Tax Payment</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>General tax</li>
+                                        <li>Property tax</li>
+                                        <li>Tax on mean of transportation</li>
+                                    </ul>
+                                </div>   
+                                <!-- Other Services    -->
+                                <div class="ml-6 mt-3">
+                                    <h2 class="uppercase text-[21px]">Other Services</h2>
+                                    <p class="w-full h-[0.8px] bg-white mt-2"></p>
+                                    <ul class="list-disc ml-7 text-[16px] mt-3">
+                                        <li>Messages (compose mail)</li>
+                                        <li>Request special exchange rate</li>
+                                        <li>Transaction report</li>
+                                        <li>Transaction report</li>
+                                    </ul>
+                                    <!-- a line of the end of description    -->
+                                    <p class=" w-full h-[0.8px] bg-white mt-10"></p> 
+                                </div>  
+                                  
+                            </div>
+
+                            <!-- Properties at the end of the section  -->
+                            <div class=" overflow-x-auto -mx-4 sm:mx-0 mb-8" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="inline-block min-w-full px-4 sm:px-0">
+                                    
+                                    <!-- left footer of textsection  -->
+                                    <div class="flex justify-start space-x-4 mt-9 p-2 rounded ml-10">
+                                        <button class="flex items-center space-x-1 text-gray-300 hover:text-white">
+                                            <i class="fas fa-print"></i>
+                                            <span>PRINT</span>
+                                        </button>
+                                        <button class="flex items-center space-x-1 text-gray-300 hover:text-white">
+                                            <i class="fas fa-share-alt"></i>
+                                            <span>SHARE</span>
+                                        </button>
+                                        <button class="flex items-center space-x-1 text-gray-300 hover:text-white">
+                                            <i class="fas fa-book"></i>
+                                            <span>BROCHURE</span>
+                                        </button>
+                                        <button class="flex items-center space-x-1 text-gray-300 hover:text-white">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <span>CURRENCY CONVERTER</span>
+                                        </button>
+                                        <button class="flex items-center space-x-1 text-gray-300 hover:text-white">
+                                            <i class="fas fa-star"></i>
+                                            <span>RATING & REVIEWS</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image Section -->
+                    <div class="w-full lg:w-1/3 mt-8 lg:mt-0 space-y-6">
+                        <!-- First Image -->
+                        <section data-aos="fade-up" data-aos-delay="400">
+                            <div class="bg-gray-900">
+                                <img
+                                    src="https://www.acledabank.com.kh/kh/assets/image/img-cam-ie-1.jpg"
+                                    alt="ACLEDA Bank Services"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </section>
+
+                        <!-- QR Code Section -->
+                        <section data-aos="fade-up" data-aos-delay="500">
+                            <div class="bg-gray-800 p-4 sm:p-6">
+                                <h2 class="text-lg sm:text-xl font-bold text-blue-300 mb-4">DO YOU WANT QR CODE (KHQR) OR POS FOR YOUR BUSINESS?</h2>
+                                <div class="mb-6">
+                                    <img
+                                        src="https://www.acledabank.com.kh/kh/assets/image/request-qr-pos-eng.jpg"
+                                        alt="QR Code and POS Services"
+                                        class="w-full rounded-lg"
+                                    />
+                                </div>
+                                <p class="mb-4 text-sm sm:text-base">
+                                    Please fill our <a href="#" class="text-blue-300 hover:underline">form here</a> and we will contact you and prepare these payment facilities for you.
+                                </p>
+                                <p class="mb-6 text-sm sm:text-base">
+                                    You can request ACLEDA Bank's QR code (KHQR) or POS terminal for your business.
+                                </p>
+                                <div class="text-center">
+                                    <a href="#" class="inline-block px-4 sm:px-6 py-2 bg-blue-700 hover:bg-blue-800 rounded-lg text-white font-medium transition duration-300">Apply Now</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ACLEDA Mobile Super App -->
+                        <section data-aos="fade-up" data-aos-delay="600">
+                            <div class="bg-gray-800 p-4 sm:p-6">
+                                <h2 class="text-lg sm:text-xl font-bold text-blue-300 mb-4 uppercase">ACLEDA Mobile Super App</h2>
+                                <div class="mb-6">
+                                    <img
+                                        src="https://www.acledabank.com.kh/kh/assets/image/img-acledamobile-1.jpg"
+                                        alt="ACLEDA Mobile Super App"
+                                        class="w-full rounded-lg"
+                                    />
+                                </div>
+                                <div class="flex space-x-3 mb-4">
+                                    <a href="#" class="inline-block">
+                                        <img
+                                            src="https://www.acledabank.com.kh/kh/acleda-toanchet/assets/apple.png"
+                                            alt="App Store"
+                                            class="h-10"
+                                        />
+                                    </a>
+                                    <a href="#" class="inline-block">
+                                        <img
+                                            src="https://www.acledabank.com.kh/kh/acleda-toanchet/assets/google.png"
+                                            alt="Google Play"
+                                            class="h-10"
+                                        />
+                                    </a>
+                                    <a href="#" class="inline-block">
+                                        <img
+                                            src="https://www.acledabank.com.kh/kh/acleda-toanchet/assets/hauwei.png"
+                                            alt="App Gallery"
+                                            class="h-10"
+                                        />
+                                    </a>
+                                </div>
+                                <p class="text-sm sm:text-base">The bank in your hand. 4.67M people using this.</p>
+                            </div>
+                        </section>
+
+                        <!-- Call Center -->
+                        <section data-aos="fade-up" data-aos-delay="700">
+                            <div class="bg-gray-800 p-4 sm:p-6">
+                                <h2 class="text-lg sm:text-xl font-bold text-blue-300 mb-4 uppercase">Call Center (24/7)</h2>
+                                <div class="mb-6">
+                                    <img
+                                        src="https://www.acledabank.com.kh/kh/assets/image/banner-callcenter-small.jpg"
+                                        alt="Call Center"
+                                        class="w-full rounded-lg"
+                                    />
+                                </div>
+                                <p class="mb-4 text-sm sm:text-base">Any comment or inquiry?</p>
+                                <p class="mb-4 text-sm sm:text-base">
+                                    <i class="fas fa-phone-alt mr-2 text-blue-300"></i> 023 994 444, 015 999 233
+                                </p>
+                                <p class="text-sm sm:text-base">
+                                    <i class="fas fa-envelope mr-2 text-blue-300"></i>
+                                    <a href="mailto:inquiry@acledabank.com.kh" class="text-blue-300 hover:underline">inquiry@acledabank.com.kh</a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Complaint Management Centre -->
+                        <section data-aos="fade-up" data-aos-delay="800">
+                            <div class="bg-gray-800 p-4 sm:p- upcoming events6">
+                                <h2 class="text-lg sm:text-xl font-bold text-blue-300 mb-4 uppercase">Complaint Management Centre</h2>
+                                <div class="mb-6">
+                                    <img
+                                        src="https://www.acledabank.com.kh/kh/assets/image/banner-complaint-small.jpg"
+                                        alt="Complaint Management Centre"
+                                        class="w-full rounded-lg"
+                                    />
+                                </div>
+                                <p class="mb-4 text-sm sm:text-base">For complaint purpose (every working day from 7:30 to 16:30).</p>
+                                <p class="mb-4 text-sm sm:text-base">
+                                    <i class="fas fa-phone-alt mr-2 text-blue-300"></i> 015 888 654
+                                </p>
+                                <p class="text-sm sm:text-base">
+                                    <i class="fas fa-envelope mr-2 text-blue-300"></i>
+                                    <a href="mailto:cmc@acledabank.com.kh" class="text-blue-300 hover:underline">cmc@acledabank.com.kh</a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Ratings & Reviews -->
+                        <section data-aos="fade-up" data-aos-delay="900">
+                            <div class="bg-gray-800 p-4 sm:p-6">
+                                <h2 class="text-lg sm:text-xl font-bold text-blue-300 mb-4 uppercase">Ratings & Reviews</h2>
+                                <div class="mb-6">
+                                    <img
+                                        src="https://www.acledabank.com.kh/kh/rate/rate_review.jpg"
+                                        alt="Ratings & Reviews"
+                                        class="w-full rounded-lg"
+                                    />
+                                </div>
+                                <p class="mb-4 text-sm sm:text-base flex items-center">
+                                    Thanks for your valuable time to rate us.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+            duration: 500,
+            once: true,
+        });
+
+      // Mobile menu toggle functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileSidebar = document.getElementById("mobile-sidebar");
+        const closeSidebarButton = document.getElementById("close-sidebar");
+
+        if (mobileMenuButton && mobileSidebar) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileSidebar.classList.add("active");
+            mobileSidebar.classList.remove("-translate-x-full");
+          });
+        }
+
+        if (closeSidebarButton && mobileSidebar) {
+          closeSidebarButton.addEventListener("click", function () {
+            mobileSidebar.classList.remove("active");
+            mobileSidebar.classList.add("-translate-x-full");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

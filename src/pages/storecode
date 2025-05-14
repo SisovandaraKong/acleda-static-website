@@ -1,0 +1,124 @@
+<!-- section for text -->
+      <section class="w-[80%] m-auto flex justify-between ">
+        <!-- left part for text -->
+        <div class="bg-blue-400 w-[65%] pt-4 ">
+          <div>
+            <button
+              id="dropdownDividerButton"
+              data-dropdown-toggle="dropdownDivider"
+              class="hover:cursor-pointer text-white font-medium text-sm px-5 py-2.5 text-center inline-flex items-center"
+              type="button"
+            >
+              Digital<svg
+                class="w-2.5 h-2.5 ms-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownDivider"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDividerButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >ACLEDA mobile Super App</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >ACLEDA Internet Banking</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Buy NoW Pay Later</a
+                  >
+                </li>
+              </ul>
+              <div class="py-2">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                  ACLEDA E-Comerce</a
+                >
+              </div>
+            </div>
+            <a
+              id="dropdownDividerButton"
+              class="text-gray-300 cursor-pointer"
+              href="#"
+            >
+              <hr />
+            </a>
+          </div>
+          <div>
+            <ul class="flex gap-2.5 text-[13px] mt-6">
+              <li>
+                <img
+                  class="w-5 h-5"
+                  src="https://www.acledabank.com.kh/kh/assets/layout/logo1.png"
+                  alt="smallogo"
+                />
+              </li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+              <li>
+                <a class="decoration-0 hover:underline" href="#"
+                  >Products & Services</a
+                >
+              </li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+              <li class="decoration-0 hover:underline cursor-pointer">
+                Digital
+              </li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+              <li class="text-gray-500">ACLEDA Internet Banking</li>
+            </ul>
+          </div>
+          <div class="text-2xl">ACLEDA <span class="text-[#CCA331]">INTERNET BANKING</span> </div>
+          <div class="flex flex-row items-center ">
+           <div class="flex text-[#CCA331]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+           </div>
+            <p class="ml-1 text-[#0070D7]">(78 Ratings)</p>
+          </div>
+          <div class="flex relative ">
+              <p>
+                ACLEDA Internet Banking is the most advanced technology<br>
+                providing you to online access banking services (desktop or<br>
+                laptop computers that are connected to the Internet) anywhere<br>
+                anytime. It is fast, secure, reliable, and convenient to manage<br>
+                your money wherever you are.
+              </p>
+            <img class="w-[300px] h-[212px] absolute right-0" src="https://www.acledabank.com.kh/kh/assets/image/img-internetbank-2.jpg" alt="">
+          </div>
+        </div>
+
+
+        <div class="bg-amber-400 w-[30%]">Hi</div>
+      </section>
