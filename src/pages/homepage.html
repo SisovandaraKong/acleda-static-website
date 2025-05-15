@@ -14,225 +14,242 @@
   <body class="font-sans bg-gray-100">
 
     
-    <header class="bg-[#0d1a2d] text-white">
+    <header class="bg-secondary text-white shadow-2xl sticky top-0 z-50">
       <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
       >
-        <div>
-          <img
-            src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
-            alt="ACLEDA Bank Logo"
-            class="h-12"
-          />
+        <div
+          class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4"
+        >
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="lg:h-16 h-10"
+            />
+          </a>
+          <a href="#" class="lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
         </div>
-        <div class="flex items-center space-x-6">
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center justify-end w-full">
           <a
             href="#"
-            class="hover:text-blue-300 text-sm font-medium flex items-center"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
           >
             SPECIAL OFFERS
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <i class="fa-solid fa-envelope-open ml-1"></i>
           </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              ABOUT ACLEDA
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
           <a
             href="#"
-            class="hover:text-blue-300 text-sm font-medium flex items-center"
-          >
-            ABOUT ACLEDA
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
-          <a
-            href="#"
-            class="hover:text-blue-300 text-sm font-medium flex items-center"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
           >
             SEARCH
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            <i class="fa-solid fa-magnifying-glass ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+              INTERNET BANKING
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-sidebar"
+        class="fixed top-0 left-0 w-full h-full bg-[#1a2c52] z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded mr-2"
+            />
+            <span>ភាសាខ្មែរ</span>
+          </div>
+          <button
+            id="close-sidebar"
+            class="bg-transparent border-none text-white text-xl cursor-pointer"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-globe w-5 mr-4"></i>
+            <span>ACLEDA INTERNET BANKING</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
           </a>
           <a
             href="#"
-            class="text-[#f0b941] hover:text-yellow-300 text-sm font-medium flex items-center"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
           >
-            INTERNET BANKING
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <i class="fas fa-money-bill-wave w-5 mr-4"></i>
+            <span>ACLEDA TOANCHET PAY</span>
           </a>
-          <img
-            src="https://www.acledabank.com.kh/kh/assets/layout/flag-cambodia.png"
-            alt="Cambodia Flag"
-            class="ml-2 h-4 border border-gray-600"
-          />
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-search w-5 mr-4"></i>
+            <span>SEARCH</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-gift w-5 mr-4"></i>
+            <span>SPECIAL OFFERS</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-university w-5 mr-4"></i>
+            <span>ABOUT ACLEDA</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-user w-5 mr-4"></i>
+            <span>PERSONAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-briefcase w-5 mr-4"></i>
+            <span>BUSINESS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-credit-card w-5 mr-4"></i>
+            <span>CARDS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-fingerprint w-5 mr-4"></i>
+            <span>DIGITAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
         </div>
       </div>
-      <div class="bg-[#0a1525] border-t border-gray-700">
+
+      <nav class="bg-primary text-white py-3 sticky top-50 z-40">
         <div
-          class="container mx-auto px-4 py-3 flex justify-between items-center"
+          class="max-w-screen-xl mx-auto px-4 py-1 hidden flex-col md:flex-row justify-between items-center lg:flex"
         >
-          <nav class="flex space-x-8">
+          <!-- Main Categories -->
+          <div
+            class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+          >
             <a
               href="#"
-              class="hover:text-blue-300 font-medium flex items-center"
+              class="text-yellow-400 font-medium px-2 py-1 text-sm hover:text-yellow-300"
             >
-              PERSONAL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
             <a
               href="#"
-              class="hover:text-blue-300 font-medium flex items-center"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
             >
-              BUSINESS
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
             <a
               href="#"
-              class="hover:text-blue-300 font-medium flex items-center"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
             >
-              CARDS
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
             <a
               href="#"
-              class="hover:text-blue-300 font-medium flex items-center"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
             >
-              DIGITAL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
-            <a href="#" class="hover:text-blue-300 font-medium">
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
               INVESTOR RELATIONS
             </a>
-          </nav>
-          <div class="flex items-center text-sm">
-            <span class="mr-4 font-medium">EXCHANGE</span>
+          </div>
+
+          <!-- Exchange Rates -->
+          <div class="flex items-center space-x-4 text-xs">
+            <span class="hidden md:inline">EXCHANGE</span>
             <div class="flex items-center">
               <img
-                src="https://www.acledabank.com.kh/kh/assets/layout/exchange-flag/AUD.png"
-                alt="Australia Flag"
-                class="h-4 mr-2"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                alt="JPY Flag"
+                class="h-4 mr-1"
               />
-              <span class="font-medium">AUD</span>
-              <span class="ml-2 text-red-400 flex items-center">
-                2,274.86
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-3 w-3 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </span>
-              <span class="ml-2 text-green-400">2,853.95</span>
+              <span>JPY</span>
+              <span class="text-green-400 ml-2"
+                >26.3505 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-green-400"
+                >27.3918 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <section class="bg-[#0d1a2d]">
@@ -1057,22 +1074,22 @@
     <footer class="bg-[#0d1a2d] text-white py-8">
       <div class="container mx-auto px-4 text-center">
         <div class="flex flex-wrap justify-center space-x-4 md:space-x-8 mb-6">
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >SITE MAP</a
           >
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >FORM CENTER</a
           >
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >USER MANUAL</a
           >
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >SECURITY TIPS</a
           >
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >NEWSLETTER</a
           >
-          <a href="#" class="hover:text-blue-300 text-sm md:text-base"
+          <a href="#" class="hover:underline text-sm md:text-base"
             >LEGAL AND PRIVACY NOTICE</a
           >
         </div>
