@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acleda</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM37KLHTgu31C4LMRGMBzIu7QwwJXVeOC-EA&s"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../output.css" />
+
+    <!-- SEO Meta Tags -->
+    <title>Acleda Bank</title>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="ACLEDA Bank supports Cambodian Arts under the art title Nikakhit drawn by artist Koem Keo Socheat."
+    />
+    <meta name="author" content="Acleda Team" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Acleda - Find Your Dream Bank Easily" />
+    <meta
+      property="og:description"
+      content="Acleda Bank, the leading bank portal where you can discover top career opportunities and land your dream bank effortlessly."
+    />
+    <meta
+      property="og:image"
+      content="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/job-thumbs%20up.jpg"
+    />
+    <meta property="og:url" content="https://job-seek-seven.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Acleda - Find Your Dream bank Easily" />
+    <meta
+      name="twitter:description"
+      content="Find top bank opportunities and apply easily with Acleda. Your career starts here!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.acledabank.com.kh/kh/assets/layout/logo-white.png"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+  </head>
+  <body>
+     <header class="bg-secondary text-white shadow-2xl sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl mx-auto lg:py-3 py-1 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div
+          class="flex items-center lg:mb-0 lg:py-5 py-3 justify-between w-full px-4"
+        >
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <a href="/" class="flex items-center">
+            <img
+              src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png"
+              alt="acledabank"
+              class="lg:h-16 h-10"
+            />
+          </a>
+          <a href="#" class="lg:hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+
+        <!-- Top Nav Items - Desktop -->
+        <div class="hidden lg:flex items-center justify-end w-full">
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SPECIAL OFFERS
+            <i class="fa-solid fa-envelope-open ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              ABOUT ACLEDA
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a
+            href="#"
+            class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+          >
+            SEARCH
+            <i class="fa-solid fa-magnifying-glass ml-1"></i>
+          </a>
+          <div class="relative">
+            <a
+              href="#"
+              class="flex items-center text-xs tracking-widest font-medium hover:text-yellow-300 whitespace-nowrap px-4"
+            >
+              INTERNET BANKING
+              <i class="fa-solid fa-chevron-down ml-1"></i>
+            </a>
+          </div>
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-sidebar"
+        class="fixed top-0 left-0 w-full h-full bg-[#1a2c52] z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+              alt="Cambodian Flag"
+              class="h-4 rounded mr-2"
+            />
+            <span>ភាសាខ្មែរ</span>
+          </div>
+          <button
+            id="close-sidebar"
+            class="bg-transparent border-none text-white text-xl cursor-pointer"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-globe w-5 mr-4"></i>
+            <span>ACLEDA INTERNET BANKING</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-money-bill-wave w-5 mr-4"></i>
+            <span>ACLEDA TOANCHET PAY</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-search w-5 mr-4"></i>
+            <span>SEARCH</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-gift w-5 mr-4"></i>
+            <span>SPECIAL OFFERS</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-university w-5 mr-4"></i>
+            <span>ABOUT ACLEDA</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-700 py-4">
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-user w-5 mr-4"></i>
+            <span>PERSONAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-briefcase w-5 mr-4"></i>
+            <span>BUSINESS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-credit-card w-5 mr-4"></i>
+            <span>CARDS</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center px-4 py-3 border-b border-gray-700 text-white"
+          >
+            <i class="fas fa-fingerprint w-5 mr-4"></i>
+            <span>DIGITAL</span>
+            <i class="fas fa-chevron-down ml-auto text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="bg-primary text-white py-3 sticky top-50 z-40">
+        <div
+          class="max-w-screen-xl mx-auto px-4 py-1 hidden flex-col md:flex-row justify-between items-center lg:flex"
+        >
+          <!-- Main Categories -->
+          <div
+            class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-6 mb-3 md:mb-0"
+          >
+            <a
+              href="#"
+              class="text-yellow-400 font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              PERSONAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              BUSINESS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              CARDS <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              DIGITAL <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white font-medium px-2 py-1 text-sm hover:text-yellow-300"
+            >
+              INVESTOR RELATIONS
+            </a>
+          </div>
+
+          <!-- Exchange Rates -->
+          <div class="flex items-center space-x-4 text-xs">
+            <span class="hidden md:inline">EXCHANGE</span>
+            <div class="flex items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                alt="JPY Flag"
+                class="h-4 mr-1"
+              />
+              <span>JPY</span>
+              <span class="text-green-400 ml-2"
+                >26.3505 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-green-400"
+                >27.3918 <i class="fas fa-arrow-up text-xs"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-[#0a1a2f] text-white font-sans">
+      <div class="flex items-center justify-between px-6 py-4 border-gray-700">
+        <div class="text-xl font-bold">
+          <img
+            src="../../assets/images/img-search/logo1.png"
+            alt="logo-acleda"
+            class="w-[20px] h-[20px] mx-[120px]"
+          />
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 py-6 max-w-screen-xl mx-auto">
+        <!-- -->
+        <div class="lg:col-span-2">
+          <h2 class="text-yellow-400 text-2xl font-semibold mb-4">SEARCH</h2>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full bg-[#0f2a44] border border-gray-600 rounded px-4 py-2 text-white placeholder-gray-400 focus:outline-none"
+            />
+          </div>
+
+          <!-- Grid of items -->
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-[30px]">
+            <!-- Item card-->
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/banner-locateus-small.jpg"
+                  alt="Branch Location"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">BRANCH LOCATION</div>
+              </a>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/img-bankingselfservice-small.jpg"
+                  alt="Self Service"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">
+                  SELF SERVICE BANKING
+                </div>
+              </a>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/img_acledaatm2.jpg"
+                  alt="ATM Location"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">ATM LOCATION</div>
+              </a>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/img_acledapos_small.jpg"
+                  alt="POS"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">ACLEDA POS</div>
+              </a>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <img
+                src="../../assets/images/img-search/img-fixeddeposit-machine-small.jpg"
+                alt="TDM"
+                class="w-full h-40 object-fill rounded-lg"
+              />
+              <div class="p-4 text-center font-medium">
+                TERM DEPOSIT MACHINE (TDM)
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/img-virtual-teller-machine-small.jpg"
+                  alt="VTM"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">
+                  VIRTUAL TELLER MACHINE (VTM)
+                </div>
+              </a>
+            </div>
+
+            <div class="rounded-lg overflow-hidden w-full">
+              <a href="#">
+                <img
+                  src="../../assets/images/img-search/img-acledamobile-scan-small.jpg"
+                  alt="Partners"
+                  class="w-full h-40 object-fill rounded-lg"
+                />
+                <div class="p-4 text-center font-medium">ACLEDA PARTNERS</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="space-y-6 ">
+          <div class="bg-[#0f2a44] p-4 rounded-lg">
+            <div class="mt-2 ">
+              <p class="text-shadow-800 mb-[12px]">
+                ACLEDA BANK PLC. HEADQUARTERS
+              </p>
+              <hr />
+              <p class="mt-[12px]">Registration No. 00003077</p>
+
+              
+            </div>
+            <br />
+            <img
+              src="../../assets/images/img-search/img_hqs_small.jpg"
+              alt="Headquarters"
+              class="w-full h-[230px] object-fill"
+            />
+            <div class="mt-2 text-sm">
+              <!-- <strong>ACLEDA BANK PLC. HEADQUARTERS</strong><br />
+              Registration No. 00003077<br /><br /> -->
+              Address:
+              <span
+                >Building N° 61, Preah Monivong Blvd., Sangkat Srah Chak, Khan
+                Doun Penh, Phnom Penh, Cambodia.</span
+              ><br />
+              P.O. Box: 1149<br />
+              Tel: 023 998 777, 023 430 999<br />
+              Fax: 023 430 555<br />
+              Email:
+              <a
+                href="mailto:acledabank@acledabank.com.kh"
+                class="text-shadow-blue-900"
+                >acledabank@acledabank.com.kh</a
+              ><br />
+              SWIFT Code: ACLBKHPP
+            </div>
+          </div>
+
+          <div class="bg-[#0f2a44] p-4 rounded-lg">
+            <div class="mt-2 mb-[12px]">
+              <div class="font-bold text-shadow-800 mb-[12px] ">CALL
+              CENTER (24/7)</div> <hr>
+            </div>
+            <img
+              src="../../assets/images/img-search/banner-callcenter-small.jpg"
+              alt="Call Center"
+              class="w-full h-40 object-cover"
+            />
+            <div class="mt-2">
+              <p class="mt-2 text-sm">Any comment or inquiry?</p>
+              <p class="text-sm">023 994 444, 085 999 233</p>
+              <p class="text-sm">
+                <a
+                  href="mailto:inquiry@acledabank.com.kh"
+                  class="text-shadow-blue-500"
+                  >inquiry@acledabank.com.kh</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+            duration: 500,
+            once: true,
+        });
+
+      // Mobile menu toggle functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileSidebar = document.getElementById("mobile-sidebar");
+        const closeSidebarButton = document.getElementById("close-sidebar");
+
+        if (mobileMenuButton && mobileSidebar) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileSidebar.classList.add("active");
+            mobileSidebar.classList.remove("-translate-x-full");
+          });
+        }
+
+        if (closeSidebarButton && mobileSidebar) {
+          closeSidebarButton.addEventListener("click", function () {
+            mobileSidebar.classList.remove("active");
+            mobileSidebar.classList.add("-translate-x-full");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

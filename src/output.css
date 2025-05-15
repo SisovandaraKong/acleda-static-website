@@ -26,7 +26,6 @@
     --color-orange-700: #9C4221;
     --color-orange-800: #7B341E;
     --color-orange-900: #652B19;
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-yellow-50: #FFFBEB;
     --color-yellow-100: #FEF3C7;
     --color-yellow-200: #FDE68A;
@@ -111,10 +110,6 @@
     --color-pink-700: #BE185D;
     --color-pink-800: #9D174D;
     --color-pink-900: #831843;
-    --color-slate-500: oklch(55.4% 0.046 257.417);
-    --color-slate-700: oklch(37.2% 0.044 257.287);
-    --color-slate-800: oklch(27.9% 0.041 260.031);
-    --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-50: #F9FAFB;
     --color-gray-100: #F3F4F6;
     --color-gray-200: #E5E7EB;
@@ -1062,6 +1057,9 @@
   .-mx-4 {
     margin-inline: calc(var(--spacing) * -4);
   }
+  .mx-\[120px\] {
+    margin-inline: 120px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1097,6 +1095,12 @@
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-\[12px\] {
+    margin-top: 12px;
+  }
+  .mt-\[30px\] {
+    margin-top: 30px;
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -1433,6 +1437,9 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-\[12px\] {
+    margin-bottom: 12px;
+  }
   .apexcharts-xaxistooltip {
     .apexcharts-canvas & {
       color: var(--color-gray-500) !important;
@@ -1541,11 +1548,20 @@
   .h-36 {
     height: calc(var(--spacing) * 36);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-\[20vh\] {
     height: 20vh;
+  }
+  .h-\[230px\] {
+    height: 230px;
   }
   .h-\[calc\(100\%-1rem\)\] {
     height: calc(100% - 1rem);
@@ -1653,6 +1669,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-full {
     width: 100%;
@@ -1854,6 +1873,9 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -2168,6 +2190,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
+  }
   .border-gray-700 {
     border-color: var(--color-gray-700);
   }
@@ -2203,6 +2228,12 @@
     .dark & {
       background-color: var(--color-gray-700);
     }
+  }
+  .bg-\[\#0a1a2f\] {
+    background-color: #0a1a2f;
+  }
+  .bg-\[\#0f2a44\] {
+    background-color: #0f2a44;
   }
   .bg-\[\#0f1923\] {
     background-color: #0f1923;
@@ -2315,6 +2346,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
   }
   .apexcharts-legend {
     .apexcharts-canvas & {
@@ -2705,6 +2739,11 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .placeholder-gray-400 {
+    &::placeholder {
+      color: var(--color-gray-400);
+    }
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -2806,6 +2845,18 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .text-shadow-blue-500 {
+    --tw-text-shadow-color: #3B82F6;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-blue-500) var(--tw-text-shadow-alpha), transparent);
+    }
+  }
+  .text-shadow-blue-900 {
+    --tw-text-shadow-color: #1E3A8A;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-blue-900) var(--tw-text-shadow-alpha), transparent);
+    }
   }
   .group-hover\:bg-white {
     &:is(:where(.group):hover *) {
@@ -3110,6 +3161,11 @@
       width: calc(1/2 * 100%);
     }
   }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3153,6 +3209,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
     }
   }
   .lg\:mt-0 {
@@ -3223,6 +3284,11 @@
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-4 {
@@ -4100,6 +4166,15 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-text-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -4159,6 +4234,8 @@
       --tw-drop-shadow-size: initial;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-text-shadow-color: initial;
+      --tw-text-shadow-alpha: 100%;
     }
   }
 }
